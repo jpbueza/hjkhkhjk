@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Now!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Multi-Position Interactive Poll</h2>
+        <form id="votingForm">
+            <div class="form-group">
+                <label for="voterId">Enter your ID Number:</label>
+                <input type="text" id="voterId" name="voterId" required>
+            </div>
+            
+            <div class="position-section">
+                <h3>Presidents</h3>
+                <div class="candidates" data-position="presidents">
+                    <button type="button" class="candidate-btn" data-candidate="General Torre">General Torre</button>
+                    <button type="button" class="candidate-btn" data-candidate="Baste Duterte">Baste Duterte</button>
+                </div>
+            </div>
+
+            <div class="position-section">
+                <h3>Vice Presidents</h3>
+                <div class="candidates" data-position="vicePresidents">
+                    <button type="button" class="candidate-btn" data-candidate="Leni Robredo">Leni Robredo</button>
+                    <button type="button" class="candidate-btn" data-candidate="Kiko Pangilinan">Kiko Pangilinan</button>
+                </div>
+            </div>
+
+            <div class="position-section">
+                <h3>Treasurers</h3>
+                <div class="candidates" data-position="treasurers">
+                    <button type="button" class="candidate-btn" data-candidate="Claudine Co">Claudine Co</button>
+                    <button type="button" class="candidate-btn" data-candidate="Gela Alonte">Gela Alonte</button>
+                </div>
+            </div>
+
+            <div class="position-section">
+                <h3>Secretaries</h3>
+                <div class="candidates" data-position="secretaries">
+                    <button type="button" class="candidate-btn" data-candidate="Vern Enciso">Vern Enciso</button>
+                    <button type="button" class="candidate-btn" data-candidate="Miguel Lim">Miguel Lim</button>
+                </div>
+            </div>
+
+            <div class="position-section">
+                <h3>PIOs</h3>
+                <div class="candidates" data-position="pios">
+                    <button type="button" class="candidate-btn" data-candidate="Discaya Family">Discaya Family</button>
+                    <button type="button" class="candidate-btn" data-candidate="Jasmine Chan">Jasmine Chan</button>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Vote</button>
+        </form>
+
+        <div id="messageArea" class="message"></div>
+        <a href="dashboard.html" class="dashboard-link">Go to Dashboard</a>
+    </div>
+
+    <script src="voting.js"></script>
+</body>
+</html>
